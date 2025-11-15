@@ -555,7 +555,7 @@ def main():
     if len(sys.argv) > 2:
         output_file = Path(sys.argv[2])
     else:
-        output_file = input_file.with_stem(input_file.stem + '_parsed').with_suffix('.json')
+        output_file = input_file.with_stem(input_file.stem + '_parsed2').with_suffix('.json')
     
     # Read input
     print(f"Reading from: {input_file}")

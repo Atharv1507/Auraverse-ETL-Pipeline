@@ -1,0 +1,80 @@
+Product Information Scraped from Example Site
+
+Basic product details captured on 2025-11-10 at 14:30 IST from the marketplace listing page. The following information was extracted during automated scraping.
+
+{"id": "prod-5421", "name": "Wireless Bluetooth Headphones", "brand": "AudioTech", "sku": "AT-WBH-5421", "category": "Electronics", "subcategory": "Audio"}
+
+The product has received positive reviews from customers across multiple platforms. Average rating stands at 4.3 out of 5 stars based on customer feedback collected over the past three months.
+
+<table class="specs">
+<tr><th>Specification</th><th>Value</th></tr>
+<tr><td>Battery Life</td><td>20 hours</td></tr>
+<tr><td>Weight</td><td>250g</td></tr>
+<tr><td>Bluetooth Version</td><td>5.2</td></tr>
+<tr><td>Charging Time</td><td>2 hours</td></tr>
+</table>
+
+Price information varies by region and seller. Current listings show price_usd: 89.99 with availability status showing in_stock for most regions. Some sellers list it as $89.99 while others show 89,99 USD or just 89.99.
+
+title: Wireless Bluetooth Headphones - Premium Edition
+manufacturer: AudioTech Industries
+origin_country: China
+warranty_period: 2 years
+release_date: 2024-09-15
+
+Customer reviews extracted from multiple sources:
+
+reviewer,rating,review_date,verified_purchase
+Sarah Johnson,5,2025-10-28,yes
+Michael Chen,4,2025-10-25,yes
+Emma Wilson,5,2025-10-22,no
+James Brown,3,2025-10-20,yes
+
+The device supports multiple codecs including AAC and aptX for high-quality audio streaming. Noise cancellation feature is active and rated at 25dB reduction according to manufacturer specifications.
+
+{ "pricing": { "base_price": 89.99, "currency": "USD", "discount_available": true, "discount_percentage": 15 }, "inventory": { "stock_count": 145, "warehouse_location": "WH-03", "reserved": 12 } }
+
+Additional product features include foldable design for portability, carrying case included, and aux cable for wired connection when battery depletes. Compatible with iOS, Android, and Windows devices.
+
+---
+metadata:
+  source_url: https://example-marketplace.com/products/audiotech-wireless-5421
+  scraper_version: 2.1.3
+  extraction_timestamp: 2025-11-10T14:30:22+05:30
+  page_language: en
+---
+
+Some specifications show inconsistent data types across sources. For example, weight appears as "250g", "250 grams", and sometimes as numeric 250. The release date shows as 2024-09-15, 15/09/2024, and Sept 15 2024 in different sections.
+
+ProductID,Color,StockQuantity,Price
+prod-5421,Black,85,89.99
+prod-5421,Silver,45,89.99
+prod-5421,Blue,15,94.99
+
+Technical specifications continued: frequency_response: "20Hz - 20kHz", impedance: "32 ohms", sensitivity: "105 dB", driver_size: "40mm", cable_length: "1.2m when wired".
+
+Contact information for support: support@audiotech.com or call +1-555-0123. Warranty claims can be filed at warranty.audiotech.com within 30 days of purchase.
+
+<div class="shipping-info">
+<p>Shipping available to: US, Canada, UK, EU, Australia, India</p>
+<p>Estimated delivery: 3-5 business days (domestic), 7-14 days (international)</p>
+<p>Free shipping on orders over $50</p>
+</div>
+
+views: 1842
+likes: 234
+shares: 67
+cart_additions: 89
+purchases: 52
+return_rate: 2.3%
+
+Some additional notes from the product page mention that the battery performance may vary based on volume levels and usage patterns. The company recommends charging with the provided USB-C cable rated at 5V/1A output.
+
+{"reviews_summary": {"total_reviews": 847, "five_star": 512, "four_star": 221, "three_star": 78, "two_star": 24, "one_star": 12, "average_rating": 4.32, "would_recommend_percentage": 87}}
+
+Competitor products in similar price range include models from Sony, Bose, and Sennheiser priced between $79.99 and $129.99. Market analysis suggests this product is positioned in the mid-range segment.
+
+Last updated: November 10, 2025
+Page views: N/A
+Stock status: Available
+Backorder: No

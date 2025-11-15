@@ -1,14 +1,14 @@
---- METADATA (key: value lines)
+
 source: https://example.com/product/widget-a
 scraper: simple-scraper-v1
 lang: en
 publisher: Example Corp
 contact: support@example.com
 
---- RAW PARAGRAPH
+
 Widget A is a compact device for everyday use. It comes in multiple colors and often appears in scraped pages with noisy markup and unrelated text like promotional banners, comments, or code snippets. The price information is inconsistent in these pages and sometimes appears as "9.99 USD", "$9.99", or "9,99". Dates observed in different locales: 12/13/2025 and 13/12/2025 (ambiguous). Some text contains OCR errors from PDFs: \"l0cation\" instead of \"location\" and \"O\" vs \"0\" confusion.
 
---- INLINE JSON (well-formed)
+
 {
   "id": "prod-1001",
   "title": "Widget A",
@@ -23,10 +23,10 @@ Widget A is a compact device for everyday use. It comes in multiple colors and o
   "release_date": "2025-11-01"
 }
 
---- MALFORMED JSON FRAGMENT (common in scraped text)
+
 { "id": "prod-1001-b", "title": "Widget B", "specs": { "color": "red", "weight": "0.5kg", }  "notes": "missing comma and trailing comma issues" 
 
---- HTML SNIPPET (embedded table)
+
 <div class="reviews">
   <h3>Customer Reviews</h3>
   <table>
@@ -39,20 +39,20 @@ Widget A is a compact device for everyday use. It comes in multiple colors and o
   </table>
 </div>
 
---- CSV-LIKE SECTION
+
 author,rating,helpful_votes,date
 Dave,4,2,2025-10-18
 Eve,2,0,18-10-2025
 Mallory,5,10,2025/10/17
 
---- KEY-VALUE KVP BLOCK (no fixed structure)
+
 title: Widget A - Special Edition
 price: $9.99
 currency: USD
 availability: In Stock
 tags: gadget;home;clearance
 
---- JSON-LD (schema.org style)
+
 <script type="application/ld+json">
 {
   "@context": "http://schema.org/",
@@ -74,35 +74,35 @@ tags: gadget;home;clearance
 }
 </script>
 
---- INLINE CSV TABLE (tabular HTML converted text captured)
+
 ProductID,Name,Color,Stock
 prod-1001,Widget A,black,120
 prod-1001,Widget A,white,80
 prod-1002,Widget B,red,50
 
---- FREE TEXT WITH NOISE & JS SNIPPET
+
 <!-- Some scraped page contains inline scripts and comments -->
 <script>var config = {id: 'prod-1001', price: '9.99', promo: true};</script>
 Random footer text - Contact us at (555) 123-4567. Promo code: SAVE10.
 Note: DO NOT RUN SQL: \"DROP TABLE users;\" included as sample text from scraped code blocks.
 
---- OCR-LIKE PAGE FOOTER
+
 Page 3 of 12
 Document title: Product catalog - Example Corp
 l0cation: Warehouse 9
 Total items: one hundred and twenty (120)
 
---- SQL-LIKE SNIPPET (should be extracted as code, not executed)
--- Example of raw SQL shown on a page, should not be executed
+
+
 SELECT id, title, price FROM products WHERE price < 20;
 
---- REPEATED FIELDS (conflicting values across page)
+
 price_usd: 9.99
 price: "$9.99"
 legacy_price: "9.9900"
 currency_hint: USD
 
---- AMBIGUOUS TYPES / MISSING DATA
+
 views: "1024"
 views: "N/A"
 sold: "12"

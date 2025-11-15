@@ -1,0 +1,16 @@
+{
+  "name": "Widget A",
+  "image": [
+    "https://example.com/images/widget-a-1.jpg",
+    "https://example.com/images/widget-a-2.jpg"
+  ],
+  "description": "A versatile widget for the modern home.",
+  "sku": "WA-1001",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "9.99",
+    "availability": "http://schema.org/InStock",
+    "url": "https://example.com/product/widget-a"
+  }
+}
